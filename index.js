@@ -22,7 +22,7 @@ app.use(express.json())
 
 //routes
 
-app.post('/',async(req,res)=>{
+app.post('*',async(req,res)=>{
 
 	const { URL }=await req.body
 	console.log(URL)
@@ -30,5 +30,7 @@ app.post('/',async(req,res)=>{
 	console.log(result)
 	res.status(201).json(result)}
 )
+
+app.get("*",(req,res)=>res.status(201).end("Nothing Here!"))
 
 app.listen(PORT,()=>console.log("Listening from 8888"))
