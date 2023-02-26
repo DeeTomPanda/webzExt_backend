@@ -1,0 +1,21 @@
+{
+  "name": "webext_backend",
+  "version": "1.0.0",
+  "description": "Backend for webExtension",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "puppeteer": "^19.7.2",
+    "website-carbon-calculator": "^1.2.7"
+  }
+}
